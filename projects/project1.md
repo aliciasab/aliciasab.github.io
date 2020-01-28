@@ -1,9 +1,5 @@
-## Project 1
+## Red Panda Generator 
 
-## This can be your internal website page / project page
+**Project description:** A generator for my followers of a twitter I made to help red panda conservation. This is one of the first coding things I ever did. It helped me raise about 500 dollars for the Red Panda network. Its very basic but people enjoyed it. 
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### 3. Support the selection of appropriate statistical tools and techniques
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="/projects/generator.png"/>
