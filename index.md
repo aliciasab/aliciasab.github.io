@@ -4,11 +4,11 @@
 
 ### Projects
 
-[Red Panda Generator](/generator)
+[Red Panda Generator](/projects/project1)
 <img src="projects/generator.png"/>
 
 ---
-[Vacant Lots in Baltimore City](/pdf/sample_presentation.pdf)
+[Vacant Lots in Baltimore City](/pdf/lab5combine.pdf)
 <img src="projects/part3map2final.png"/>
 
 ---
