@@ -2,32 +2,21 @@
 
 ---
 
-### Category Name 1 
+### Projects
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Red Panda Generator](/generator)
+<img src="projects/generator.png"/>
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Vacant Lots in Baltimore City](/pdf/sample_presentation.pdf)
+<img src="projects/part3map2final.png"/>
 
 ---
 
-### Category Name 2
+### Links
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
-
----
-
-
+- [Red Panda Generator](https://redpandasdaily.com/experiment/)
+- [Vacant Lots, Buildings, and Rat Reports in Baltimore City](http://nerdjpg.github.io/386project)
 
 
 ---
