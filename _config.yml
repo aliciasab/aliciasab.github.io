@@ -2,10 +2,11 @@ title: Alicia Sabatino # your name (or website title) here
 logo: "/images/me.png" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   <br><br>
-  Environmental Science and Geography Major and Computer Science minor at the University of Baltimore Maryland
+  Environmental Science and Geography Major and Computer Science minor at the University of Maryland, Baltimore County.
   <br><br>
   I have worked in the Anthropogenic Landscape Ecology lab and conducted bioacoustics research and contributed to the processing of remotely sensed images. 
   I am currently working in the Mapping Capital lab at UMBC and contributing to projects that analyze geographies of inequity. 
+  <br>
   <a href="https://www.twitter.com/nerdjpg">View My Twitter</a> 
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
