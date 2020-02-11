@@ -3,7 +3,7 @@
 ---
 
 Coming Soon- !<br>
-[<img src="/images/undercon.PNG?raw=true"/>](/index) 
+[<img src="/images/undercon.png?raw=true"/>](/index) 
 
 ## 386: Intro to GIS
 
