@@ -6,10 +6,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   I have worked in the Anthropogenic Landscape Ecology lab and conducted bioacoustics research and contributed to the processing of remotely sensed images. 
   I am currently working in the Mapping Capital lab at UMBC and contributing to projects that analyze geographies of inequity. 
-  <script language="JavaScript">var fhsh = document.createElement('script');var fhs_id_h = "3345054";
-fhsh.src = "//freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=Visits&a=1";
-document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
-</script>
+
   <br><br>
   <a href="https://www.twitter.com/nerdjpg">Twitter</a>  
 theme: jekyll-theme-minimal
