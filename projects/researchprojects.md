@@ -9,4 +9,4 @@
 ## Mapping Capital Lab
 
 Coming Soon- !<br>
-[<img src="images/undercon.png?raw=true"/>](/)
+[<img src="/images/undercon.png?raw=true"/>](/)
