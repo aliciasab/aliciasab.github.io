@@ -16,7 +16,7 @@ Assignments and projects completed during my undergraduate career at UMBC.
 ---
 [Research Projects](/projects/researchprojects)
 Projects I contributed to during my time at the Anthropogenic Landscape Ecology Lab and the Mapping Capital Lab at UMBC.
-<img src="projects/researchproj.png"/>
+<img src="images/researchproj.png"/>
 
 ### Links
 
