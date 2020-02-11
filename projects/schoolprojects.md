@@ -3,10 +3,12 @@
 ---
 
 Coming Soon- !<br>
-[<img src="images/undercon.PNG?raw=true"/>](/index) 
+[<img src="/images/undercon.PNG?raw=true"/>](/index) 
 
 ## 386: Intro to GIS
 
+[Baltimore Vacant Lots and Buildings](/projects/project2)
+[<img src="part3map2final.png?raw=true"/>](/projects/project2) 
 
 ## 486: Advanced GIS
 
