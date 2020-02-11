@@ -6,17 +6,18 @@
 
 [Personal Projects](/projects/personalprojects)
 Unfunded and unsupervised projects completed for fun.
-<img src="images/personalproj.png"/>
+[<img src="images/personalproj.PNG?raw=true"/>](/projects/personalprojects)
+
 
 ---
 [Class Projects](/projects/schoolprojects)
 Assignments and projects completed during my undergraduate career at UMBC.
-<img src="images/schoolproj.png"/>
+[<img src="images/schoolproj.jpg?raw=true"/>](/projects/schoolprojects)
 
 ---
 [Research Projects](/projects/researchprojects)
 Projects I contributed to during my time at the Anthropogenic Landscape Ecology Lab and the Mapping Capital Lab at UMBC.
-<img src="images/researchproj.png"/>
+[<img src="images/researchproj.PNG"/>](/projects/researchprojects)
 
 ### Links
 
