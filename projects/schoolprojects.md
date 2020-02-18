@@ -6,7 +6,7 @@
 ## 386: Intro to GIS
 
 [Baltimore Vacant Lots and Buildings](/projects/schoolprojects/386/vacantlots)
-[<img src="/images/Capture.png?raw=true"/>](/projects/schoolprojects/386/vacantlots) 
+[<img src="/images/Capture.PNG?raw=true"/>](/projects/schoolprojects/386/vacantlots) 
 
 ## 486: Advanced GIS
 
