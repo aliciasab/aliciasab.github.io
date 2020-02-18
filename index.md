@@ -12,7 +12,7 @@ Unfunded and unsupervised projects completed for fun.
 ---
 [Class Projects](/projects/schoolprojects)
 Assignments and projects completed during my undergraduate career at UMBC.
-[<img src="images/schoolproj.jpg?raw=true"/>](/projects/schoolprojects)
+[<img src="images/Capture.PNG?raw=true"/>](/projects/schoolprojects)
 
 ---
 [Research Projects](/projects/researchprojects)
