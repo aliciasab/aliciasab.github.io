@@ -7,8 +7,8 @@ Coming Soon- !<br>
 
 ## 386: Intro to GIS
 
-[Baltimore Vacant Lots and Buildings](/projects/project2)
-[<img src="part3map2final.png?raw=true"/>](/projects/project2) 
+[Baltimore Vacant Lots and Buildings](/projects/schoolprojects/386/vacantlots)
+[<img src="part3map2final.png?raw=true"/>](/projects/schoolprojects/386/vacantlots) 
 
 ## 486: Advanced GIS
 
