@@ -15,12 +15,19 @@ There were around 250k tweets per day collected, which were then narrowed down t
 ---
 
 ## 2. COVID-19 Tweets at the U.S. County Level
+
 ### Next I looked at Tweets by County
+
 <img src="picsforweb/TWEETNYC.png"/>
+
 [insert map of tweets by county ]
+
 ### Then I got data on COVID-19 Cases by County 
-[insert map of covid-cases w counties]
-### Then I compared COVID-19 Tweet Share by County to COVID-19 Case by County
+
+<img src="picsforweb/countycovidcases.png"/>
+
+### And I compared COVID-19 Tweet Share by County to COVID-19 Case by County
+
 [insert map comparing share]
 
 These were based on one collection of 270k tweets, which were then narrowed down to about 14k by selecting for ones with geolocation data. 
