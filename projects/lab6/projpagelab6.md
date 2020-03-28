@@ -1,6 +1,6 @@
 # Lab 6: Mapping COVID-19 using Twitter Data
 
-I made various maps using twitter data in conjunction with COVID-19 Data from the New York Times.
+I made various maps using twitter data in conjunction with COVID-19 Data from the New York Times and population data from the 2019 Census.
 
 ---
 
