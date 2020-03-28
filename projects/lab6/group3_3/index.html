@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        #map {
+            width: 1036px;
+            height: 894px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/COVID19vsM4A_1.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[-15.280218707238092,-171.9553628322312],[79.23267810408738,2.841724580706258]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        var layer_CartoLight_0 = L.tileLayer('http://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 22
+        });
+        layer_CartoLight_0;
+        map.addLayer(layer_CartoLight_0);
+        function pop_COVID19vsM4A_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">STATE</th>\
+                        <td>' + (feature.properties['STATE'] !== null ? Autolinker.link(feature.properties['STATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">POPULATION</th>\
+                        <td>' + (feature.properties['POPULATION'] !== null ? Autolinker.link(feature.properties['POPULATION'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">M4A_TWEETS</th>\
+                        <td>' + (feature.properties['M4A_TWEETS'] !== null ? Autolinker.link(feature.properties['M4A_TWEETS'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">COVID_TWEE</th>\
+                        <td>' + (feature.properties['COVID_TWEE'] !== null ? Autolinker.link(feature.properties['COVID_TWEE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">COVID_V_M4</th>\
+                        <td>' + (feature.properties['COVID_V_M4'] !== null ? Autolinker.link(feature.properties['COVID_V_M4'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_COVID19vsM4A_1_0(feature) {
+            if (feature.properties['COVID_V_M4'] >= -0.010600 && feature.properties['COVID_V_M4'] <= 0.000000 ) {
+                return {
+                pane: 'pane_COVID19vsM4A_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(230,97,1,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['COVID_V_M4'] >= 0.000000 && feature.properties['COVID_V_M4'] <= 0.000033 ) {
+                return {
+                pane: 'pane_COVID19vsM4A_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(247,247,247,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['COVID_V_M4'] >= 0.000033 && feature.properties['COVID_V_M4'] <= 0.003300 ) {
+                return {
+                pane: 'pane_COVID19vsM4A_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(94,60,153,1.0)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_COVID19vsM4A_1');
+        map.getPane('pane_COVID19vsM4A_1').style.zIndex = 401;
+        map.getPane('pane_COVID19vsM4A_1').style['mix-blend-mode'] = 'normal';
+        var layer_COVID19vsM4A_1 = new L.geoJson(json_COVID19vsM4A_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_COVID19vsM4A_1',
+            layerName: 'layer_COVID19vsM4A_1',
+            pane: 'pane_COVID19vsM4A_1',
+            onEachFeature: pop_COVID19vsM4A_1,
+            style: style_COVID19vsM4A_1_0,
+        });
+        bounds_group.addLayer(layer_COVID19vsM4A_1);
+        map.addLayer(layer_COVID19vsM4A_1);
+        setBounds();
+        </script>
+    </body>
+</html>
