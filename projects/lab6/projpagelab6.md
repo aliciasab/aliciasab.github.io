@@ -1,7 +1,10 @@
-## Lab 6: Mapping COVID-19 using Twitter Data
+# Lab 6: Mapping COVID-19 using Twitter Data
 
-**Project description:** I made various maps using twitter data in conjunction with COVID-19 Data from the New York Times.
-### 1. COVID-19 Tweets Through Time
+I made various maps using twitter data in conjunction with COVID-19 Data from the New York Times.
+
+---
+
+## 1. COVID-19 Tweets Through Time
 
 I collected several million tweets using rtweet that contained either "covid19" or "covid19" from March 20,2020 to March 27, 2020.
 
@@ -9,7 +12,9 @@ I collected several million tweets using rtweet that contained either "covid19" 
 
 There were around 250k tweets per day collected, which were then narrowed down to tweets with location data. 
 
-### 2. COVID-19 Tweets at the County Level
+---
+
+## 2. COVID-19 Tweets at the County Level
 
 [insert map of tweet points over counties]
 [insert map of tweets by county ]
@@ -22,15 +27,22 @@ These tweets spanned March 25 - March 27 and I compared them.
 
 Note: I will also be adding one adjusted for population.
 
-### 3. Comparing COVID-19 Tweets to Medicare for All tweets by State
+---
+
+## 3. Comparing COVID-19 Tweets to Medicare for All tweets by State
+### Click either image to open a web map!
 [<img src="picsforweb/m4a_covid_pts.jpeg"/>](/projects/lab6/group3_1/index.html)
-[<img src="m4a_covid_state.jpeg"/>](/projects/lab6/group3_2/index.html)
+---
+[<img src="m4a_covid_state.jpeg"/>](/projects/lab6/group3_3/index.html)
+---
 COVID-19 tweet data was collected using rtweet. Tweets contained either "covid19" or "covid19" from March 25,2020 to March 27, 2020.
 Medicare for All tweets contained either "MedicareForAll" (the popular hashtag) or "Medicare for All" (the phrase) from March 25, 2020 to March 27. 2020.
 
 There were 14k COVID-19 tweets and 900 Medicare for All tweets with location data.The tweets were adjusted for population.
 
-### 4. Comparing Medicare for All Tweets to COVID-19 Cases
+---
+
+## 4. Comparing Medicare for All Tweets to COVID-19 Cases
 
 [insert map comparing share of COVID-19 Cases to share of medicare for all tweets]
 
