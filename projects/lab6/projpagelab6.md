@@ -32,9 +32,13 @@ Note: I will also be adding one adjusted for population.
 ## 3. Comparing COVID-19 Tweets to Medicare for All tweets by State
 ### Click either image to open a web map!
 [<img src="picsforweb/m4a_covid_pts.jpeg"/>](/projects/lab6/group3_1/index.html)
+
 ---
+
 [<img src="m4a_covid_state.jpeg"/>](/projects/lab6/group3_3/index.html)
+
 ---
+
 COVID-19 tweet data was collected using rtweet. Tweets contained either "covid19" or "covid19" from March 25,2020 to March 27, 2020.
 Medicare for All tweets contained either "MedicareForAll" (the popular hashtag) or "Medicare for All" (the phrase) from March 25, 2020 to March 27. 2020.
 
