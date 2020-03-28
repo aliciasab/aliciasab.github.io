@@ -57,7 +57,7 @@ There were 14k COVID-19 tweets and 900 Medicare for All tweets with location dat
 
 ## 4. Comparing Medicare for All Tweets to COVID-19 Cases
 
-[insert map comparing share of COVID-19 Cases to share of medicare for all tweets]
+<img src="picsforweb/part4.png"/>
 
 This map compares a state's COVID-19 Cases share to its Medicare for All tweet share.
 I hope to also create a map containing these shares adjusted with population.
