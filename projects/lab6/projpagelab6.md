@@ -28,7 +28,7 @@ There were around 250k tweets per day collected, which were then narrowed down t
 
 ### And I compared COVID-19 Tweet Share by County to COVID-19 Case by County
 
-[insert map comparing share]
+<img src="picsforweb/countyshare.png"/>
 
 These were based on one collection of 270k tweets, which were then narrowed down to about 14k by selecting for ones with geolocation data. 
 
