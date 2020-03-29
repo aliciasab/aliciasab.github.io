@@ -8,7 +8,7 @@ I made various maps using twitter data in conjunction with COVID-19 Data from th
 
 I collected several million tweets using rtweet that contained either "covid19" or "covid19" from March 20,2020 to March 27, 2020.
 
-[insert gimp photo]
+<img src="picsforweb/all.gif">
 
 There were around 250k tweets per day collected, which were then narrowed down to tweets with location data. 
 
