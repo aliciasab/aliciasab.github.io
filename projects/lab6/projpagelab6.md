@@ -7,10 +7,14 @@ I made various maps using twitter data in conjunction with COVID-19 Data from th
 ## 1. COVID-19 Tweets Through Time
 
 I collected several million tweets using rtweet that contained either "covid19" or "covid19" from March 20,2020 to March 27, 2020.
+There were around 250k tweets per day collected, which were then narrowed down to tweets with location data. 
 
 <img src="picsforweb/all.gif">
 
-There were around 250k tweets per day collected, which were then narrowed down to tweets with location data. 
+Then I limited the Time frame to show changes in volume. March 20 had the most tweets during this time frame with location data, while March 26 had the least.
+
+<img src="picsforweb/covid_12hours.gif">
+
 
 ---
 
