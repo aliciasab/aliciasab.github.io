@@ -10,21 +10,25 @@ This data was transformed using R. I wrote [scripts](add.link) to subset the dat
 
 ### Analysis Tools
 To create graphs and summary tables I used R and Excel. Graph 1 shows the pre-trial incarceration rate increases as a whole over the years, meaning the number of people incarcerated who aren’t convicted has significantly increased through time. Graph 2 shows pretrial incarceration rates / 100,000 people by density classification. This shows an increase in rural incarceration through time.
-(graph 1) (graph 2)
+
+<img src="Rplot_u.png"/>
+<img src="Rplot_r.png"/>
+
 
 ## Products 
 ### Current Products
 First, I created a map showing the counties designated as four categories: urban, small/mid sized metropolitan area, suburban, and rural. 
 
-(insert map)
+<img src="ruralurbanmap.png"/>
 
 Maps 2 and 3 show county level incarceration rates per 100,000 people in 1975 and 2015. The most striking thing on these maps is the overall, nearly uniform increase in incarceration rates around the country. 
 
-(insert maps)
+<img src="rate1975.png"/>
+<img src="rate2015.png"/>
 
 I created a time-lapse map showing the shift in incarceration trends by five year increments from 1975 - 2015. 
 
-(gif)
+<img src="all.gif"/>
 
 ## Future Products
 In project 3 I hope to use this data to compare prison and jail capacities to hospital capacities. I hypothesize that rural counties that have experienced an incarcerated population boom, financed by the U.S. government, do not have adequate healthcare facilities.  I hope to produce more graphs and interactive maps to illustrate where the shift was largest, and possibly investigate other factors that correlate with the largest shifts from urban to rural incarceration. I can estimate the number of beds from other data points, like prison capacity and prison population.
