@@ -42,7 +42,9 @@ As previously shown the overall trend for the United States as a whole is a shar
 <img src="ChartMidwest.png"/>
 <img src="ChartNortheast.png"/>
 
-Statistically, whether or not a county was located in the southern region of the United States impacted how much the pre-trial incarceration rate would increase in rural areas. 
+Statistically, whether or not a county was located in the southern region of the United States impacted how much the pre-trial incarceration rate would increase in rural areas. While overall, rural areas saw increased pre-trial incarceration, the increase was much more prominent in the South.
+
+<img src="perinc.png"/>
 chart 6
 
 ### Percent Increase Or Decrease
