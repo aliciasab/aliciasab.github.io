@@ -13,6 +13,7 @@ In addition, there has been a shift in the geography of incarceration. In the mi
 
 The U.S. Census categorizes counties as urban, small/mid metropolitan, suburban, and rural as a way to classify density. Additionally, the U.S. Census divides the country up into the South, the Northeast, the West, and the Midwest. This project aims to examine the rural incarceration boom, and determine whether this rural shift occured in all regions of the United States.
 (map1 and map 2)
+<img src="densitymap.png"/>
 
 Incarceration Rates in the United States have trended signifcantly upward since the 70s.
 
