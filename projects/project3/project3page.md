@@ -1,7 +1,7 @@
 # Project 3 | GES 486 | Alicia Sabatino
 
 ## Introduction
-The history of mass incarceration in the United States begins with the "end" of slavery: the ammendment to the Consitution that abolished slavery in the United States, also enabled the state to control people who have committed crimes as property (cite). In the south, where a majority of enslaved people were held, [finish sentence]. 
+The history of mass incarceration in the United States begins with the "end" of slavery: the ammendment to the Consitution that abolished slavery in the United States, also enabled the state to control people who have committed crimes as property. In the south, where a majority of enslaved people were held, incarceration boomed. Eventually, incarceration rates across the country rose as "tough on crime" policies were implemented and corporate prisons formed super PACs and put forth legislation.
 
 Recently, there has been a shift in the geography of incarceration in the United States. Prisons are now increasingly incarcerating more people who have not been convicted of a crime. This trend holds on average for the United States.
 
@@ -31,7 +31,7 @@ This project used data from the [United States Census Bureau](https://www.census
 
 The data was transformed and and queried in R. R was also used to created plots and shapefiles to visualize the shift in incarceration in the United States. 
 
-To determine a statistical relationship, the coefficient of determination was used. 
+To determine a statistical relationship, the coefficient of determination was used. In the south, R-sqaured was _ In the northeast, R-squared was , incidating a negative correlation. 
 
 ## Results
 ### Density shift by Region
@@ -42,19 +42,17 @@ As previously shown the overall trend for the United States as a whole is a shar
 <img src="ChartMidwest.png"/>
 <img src="ChartNortheast.png"/>
 
-Statistically, whether or not a county was located in the southern region of the United States impacted how much the pre-trial incarceration rate would increase in rural areas. While overall, rural areas saw increased pre-trial incarceration, the increase was much more prominent in the South.
+Interestingly, while the final incarceration rates for the south show a large increase in pre-trial incarceration in the South, if one looks at percent increase from 2005 to 2015, the largest increase on average is in the Midwest.
 
-<img src="RuralRegion.png"/>
-
-chart 6
+<img src="table.PNG"/>
 
 ### Percent Increase Or Decrease
 
 The shift in places of incarceration occured in the mid to late 2010s, as shown by the previous charts. To view this change interactively, click the  map below.
 
-<img src="perinc.png"/>
-
 ### Interactive Map 1
+
+<img src="perinc.png"/>
 
 ## Discussion
 
@@ -62,4 +60,4 @@ There are many possibile explanations for this trend being region specific. Pris
 
 This should be investigated further and controlled for other variables. 
 
-## Citations
+
