@@ -30,7 +30,7 @@ This project used data from the [United States Census Bureau](https://www.census
 
 The data was transformed and and queried in R. R was also used to created plots and shapefiles to visualize the shift in incarceration in the United States. 
 
-To determine a statistical relationship, the coefficient of determination was used. In the south, R-sqaured was _ In the northeast, R-squared was , incidating a negative correlation. 
+To determine a statistical relationship, the coefficient of determination was used. In the southern rural areas, R-sqaured was .85 showing a sharp increase in pre-trial incarceration through time. 
 
 ## Results
 ### Density shift by Region
