@@ -38,5 +38,10 @@ The shift in places of incarceration occured in the mid to late 2010s, as shown 
 
 ### Interactive Map 1
 
-### Discussion
+## Discussion
 
+There are many possibile explanations for this trend being region specific. Prisons are spaces of labor. It is possible this geography emerged from the type of labor incarcerated people in that region are made to engage in. In the South, there are more incarcerated people doing agricultural work. 
+
+This should be investigated further and controlled for other variables. 
+
+## Citations
