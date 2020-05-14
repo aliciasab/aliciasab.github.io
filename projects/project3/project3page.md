@@ -22,8 +22,7 @@ Incarceration Rates in the United States have trended signifcantly upward since 
 
 Currently, there are 7,067 incarceration facilities in the United States. Click the link to see the facility on a map along with the number of inmates, region, and density of the location.
 
-<img src="prisons.png"/>
-
+[<img src="prisons.png"/>](http://nerdjpg.github.io/projects/project3/qgis2web_2020_05_14-14_20_26_721882/index.html/)
 This project uses county-level data across a 45 year span to examine spatial shifts in incarceration rates in the United States.
 
 ## Methods
