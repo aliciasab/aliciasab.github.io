@@ -5,22 +5,38 @@ The history of mass incarceration in the United States begins with the "end" of 
 
 Recently, there has been a shift in the geography of incarceration in the United States. Prisons are now increasingly incarcerating people outside of their county, in rural areas. This trend holds on average for the United States (chart 1). 
 
-The U.S. Census categorizes counties as urban, small/mid metropolitan, suburban, and rural as a way to classify density. Additionally, the U.S. Census divides the country up into the South, the Northeast, the West, and the Midwest. In this project, I am to examine the rural incarceration boom, and determine whether this rural shift occured in all regions of the United States.
+The U.S. Census categorizes counties as urban, small/mid metropolitan, suburban, and rural as a way to classify density. Additionally, the U.S. Census divides the country up into the South, the Northeast, the West, and the Midwest. This project aims to examine the rural incarceration boom, and determine whether this rural shift occured in all regions of the United States.
 (map1 and map 2)
+
+Incarceration Rates in the United States have trended signifcantly upward since the 70s.
+
+(gif map 1)
 
 Currently, there are xx,xxx incarceration facilities in the United States. Click the link to see the facility on a map along with the number of inmates, region, and density of the location.
 (leaflet map 1)
 
-## Methods
-I used data from the [United States Census Bureau](https://www.census.gov/developers/) and the Vera Institute of Justice for this project. The Vera Institute of Justice compiled an Incarceration Trends dataset, which is freely available on [their github page](https://github.com/vera-institute/incarceration_trends).  
+This project uses county-level data across a 45 year span to examine spatial shifts in incarceration rates in the United States.
 
-In R, I transformed and querey the data and created plots and shapefiles to visualize the shift in incarceration in the United States. 
-To determine a relationship, I used the coefficient of determination. 
+## Methods
+This project used data from the [United States Census Bureau](https://www.census.gov/developers/) and the Vera Institute of Justice for this project. The Vera Institute of Justice compiled an Incarceration Trends dataset, which is freely available on [their github page](https://github.com/vera-institute/incarceration_trends).  
+
+The data was transformed and and queried in R. R was also used to created plots and shapefiles to visualize the shift in incarceration in the United States. 
+
+To determine a statistical relationship, the coefficient of determination was used. 
 
 ## Results
-### Charts Section
-### Maps Section
+### Density shift by Region
+As previously shown the overall trend for the United States as a whole is [describe]. However, for each region, this pattern does not hold.
+chart 2,3,4,5
+
+Statistically, whether or not a county was located in the southern region of the United States impacted how much the pre-trial incarceration rate would increase. 
+chart 6
+
+### Percent Increase Or Decrease
+
+The shift in places of incarceration occured in the mid to late 2010s, as shown by the previous charts. To view this change interactively, click the  map below.
+
 ### Interactive Map 1
-### Interactive Map 2
 
 ### Discussion
+
