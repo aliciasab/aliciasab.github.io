@@ -16,9 +16,9 @@ The U.S. Census categorizes counties as urban, small/mid metropolitan, suburban,
 <img src="densitymap.png"/>
 <img src="region.png"/>
 
-Incarceration Rates in the United States have trended signifcantly upward since the 70s.
+Incarceration Rates in the United States have trended signifcantly upward since the 80s.
 
-(gif map 1)
+<img src="19802015.gif"/>
 
 Currently, there are xx,xxx incarceration facilities in the United States. Click the link to see the facility on a map along with the number of inmates, region, and density of the location.
 
