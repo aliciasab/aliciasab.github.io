@@ -3,7 +3,13 @@
 ## Introduction
 The history of mass incarceration in the United States begins with the "end" of slavery: the ammendment to the Consitution that abolished slavery in the United States, also enabled the state to control people who have committed crimes as property (cite). In the south, where a majority of enslaved people were held, [finish sentence]. 
 
-Recently, there has been a shift in the geography of incarceration in the United States. Prisons are now increasingly incarcerating people outside of their county, in rural areas. This trend holds on average for the United States (chart 1). 
+Recently, there has been a shift in the geography of incarceration in the United States. Prisons are now increasingly incarcerating more people who have not been convicted of a crime. This trend holds on average for the United States.
+
+<img src="ChartUSonly.png"/>
+
+In addition, there has been a shift in the geography of incarceration. In the mid 2000s rural coutnies started to have higher incarceration rates than urban counties.
+
+<img src="ChartUS.png"/>
 
 The U.S. Census categorizes counties as urban, small/mid metropolitan, suburban, and rural as a way to classify density. Additionally, the U.S. Census divides the country up into the South, the Northeast, the West, and the Midwest. This project aims to examine the rural incarceration boom, and determine whether this rural shift occured in all regions of the United States.
 (map1 and map 2)
@@ -26,8 +32,12 @@ To determine a statistical relationship, the coefficient of determination was us
 
 ## Results
 ### Density shift by Region
-As previously shown the overall trend for the United States as a whole is [describe]. However, for each region, this pattern does not hold.
-chart 2,3,4,5
+As previously shown the overall trend for the United States as a whole is a sharper increase in pretrial incarceration in rural areas when compared to urban areas. However, for each region, this pattern does not hold.
+
+<img src="ChartSouth.png"/>
+<img src="ChartWest.png"/>
+<img src="ChartMidwest.png"/>
+<img src="ChartNortheast.png"/>
 
 Statistically, whether or not a county was located in the southern region of the United States impacted how much the pre-trial incarceration rate would increase. 
 chart 6
