@@ -12,14 +12,16 @@ In addition, there has been a shift in the geography of incarceration. In the mi
 <img src="ChartUS.png"/>
 
 The U.S. Census categorizes counties as urban, small/mid metropolitan, suburban, and rural as a way to classify density. Additionally, the U.S. Census divides the country up into the South, the Northeast, the West, and the Midwest. This project aims to examine the rural incarceration boom, and determine whether this rural shift occured in all regions of the United States.
-(map1 and map 2)
+
 <img src="densitymap.png"/>
+<img src="region.png"/>
 
 Incarceration Rates in the United States have trended signifcantly upward since the 70s.
 
 (gif map 1)
 
 Currently, there are xx,xxx incarceration facilities in the United States. Click the link to see the facility on a map along with the number of inmates, region, and density of the location.
+
 (leaflet map 1)
 
 This project uses county-level data across a 45 year span to examine spatial shifts in incarceration rates in the United States.
