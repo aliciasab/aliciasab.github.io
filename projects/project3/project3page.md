@@ -7,16 +7,16 @@ Recently, there has been a shift in the geography of incarceration in the United
 
 <img src="ChartUSonly.png"/>
 
-In addition, there has been a shift in the geography of incarceration. In the mid 2000s rural coutnies started to have higher incarceration rates than urban counties.
+In addition, there has been a shift in the geography of incarceration. In the mid 2000s rural counties started to have higher incarceration rates than urban counties.
 
 <img src="ChartUS.png"/>
 
-The U.S. Census categorizes counties as urban, small/mid metropolitan, suburban, and rural as a way to classify density. Additionally, the U.S. Census divides the country up into the South, the Northeast, the West, and the Midwest. This project aims to examine the rural incarceration boom, and determine whether this rural shift occured in all regions of the United States.
+The U.S. Census categorizes counties as urban, small/mid metropolitan, suburban, and rural as a way to classify density. Additionally, the U.S. Census divides the country up into the South, the Northeast, the West, and the Midwest. This project aims to examine the rural incarceration boom, and determine whether this rural shift occurred in all regions of the United States.
 
 <img src="densitymap.png"/>
 <img src="region.png"/>
 
-Incarceration Rates in the United States have trended signifcantly upward since the 80s.
+Incarceration Rates in the United States have trended significantly upward since the 80s.
 
 <img src="19802015.gif"/>
 
@@ -28,9 +28,9 @@ This project uses county-level data across a 45 year span to examine spatial shi
 ## Methods
 This project used data from the [United States Census Bureau](https://www.census.gov/developers/) and the Vera Institute of Justice for this project. The Vera Institute of Justice compiled an Incarceration Trends dataset, which is freely available on [their github page](https://github.com/vera-institute/incarceration_trends).  
 
-The data was transformed and and queried in R. R was also used to created plots and shapefiles to visualize the shift in incarceration in the United States. 
+The data was transformed and queried in R. R was also used to create plots and shapefiles to visualize the shift in incarceration in the United States. 
 
-To determine a statistical relationship, the coefficient of determination was used. In the southern rural areas, R-sqaured was .85 showing a sharp increase in pre-trial incarceration through time. 
+To determine a statistical relationship, the coefficient of determination was used. In the southern rural areas, R-squared was .85 showing a sharp increase in pre-trial incarceration through time. 
 
 ## Results
 ### Density shift by Region
@@ -41,7 +41,7 @@ As previously shown the overall trend for the United States as a whole is a shar
 <img src="ChartMidwest.png"/>
 <img src="ChartNortheast.png"/>
 
-Interestingly, while the final incarceration rates for the south show a large increase in pre-trial incarceration in the South, if one looks at percent increase from 2005 to 2015, the largest increase on average is in the Midwest.
+Interestingly, while the final incarceration rates for the south show a large increase in pretrial incarceration in the South, if one looks at percent increase from 2005 to 2015, the largest increase on average is in the Midwest.
 
 <img src="table.PNG"/>
 
@@ -50,12 +50,13 @@ Interestingly, while the final incarceration rates for the south show a large in
 The shift in places of incarceration occured in the mid to late 2010s, as shown by the previous charts. To view this change interactively, click the  map below.
 
 [<img src="perinc.png"/>](http://nerdjpg.github.io/projects/project3/webmap2/index.html)
-
+the file was too big for my final map :(
 
 ## Discussion
 
-There are many possibile explanations for this trend being region specific. Prisons are spaces of labor. It is possible this geography emerged from the type of labor incarcerated people in that region are made to engage in. In the South, there are more incarcerated people doing agricultural work. 
+There are many possible explanations for this trend being region specific. Prisons are spaces of labor. It is possible this geography emerged from the type of labor incarcerated people in that region are made to engage in. In the South, there are more incarcerated people doing agricultural work. 
 
 This should be investigated further and controlled for other variables. 
+
 
 
