@@ -50,7 +50,10 @@ Interestingly, while the final incarceration rates for the south show a large in
 The shift in places of incarceration occured in the mid to late 2010s, as shown by the previous charts. To view this change interactively, click the  map below.
 
 [<img src="perinc.png"/>](http://nerdjpg.github.io/projects/project3/webmap2/index.html)
-the file was too big for my final map :(
+the file was too big for my final map :( so here's a static one
+
+[<img src="perincmap.png"/>]
+
 
 ## Discussion
 
