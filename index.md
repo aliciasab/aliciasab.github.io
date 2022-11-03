@@ -4,26 +4,16 @@
 
 ### Projects
 
-[Personal Projects](/projects/personalprojects)
-Unfunded and unsupervised projects completed for fun.
-[<img src="images/personalproj.PNG?raw=true"/>](/projects/personalprojects)
-
-
 ---
-[Class Projects](/projects/schoolprojects)
-Assignments and projects completed during my undergraduate career at UMBC.
+[Web GIS](/projects/webgis)
+Interactive GIS Maps and Applications utilizing different methods and techniques. I have about four years of experiene using different applications and programming languages to creatie interactive web maps.
 [<img src="images/Capture.PNG?raw=true"/>](/projects/schoolprojects)
 
 ---
-[Research Projects](/projects/researchprojects)
-Projects I contributed to during my time at the Anthropogenic Landscape Ecology Lab and the Mapping Capital Lab at UMBC.
+[Other Data Vizualizations(/projects/dataviz)
+In addition to mapping I will occasionally produce other types of visualizations, mostly using JavaScript and R.
 [<img src="images/researchproj.PNG"/>](/projects/researchprojects)
 
-### Links
-
-- [Personal Projects](/projects/personalprojects)
-- [Class Projects](/projects/schoolprojects)
-- [Research Projects](/projects/researchprojects)
 
 
 ---
