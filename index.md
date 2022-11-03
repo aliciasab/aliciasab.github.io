@@ -5,7 +5,8 @@
 ### GIS
 
 ---
-[GIS](https://alicias.io/)
+[GIS Portfolio](https://alicias.io/)
+
 Interactive GIS Maps and Applications utilizing different methods and techniques. I have about four years of experiene using different applications and programming languages to creatie interactive web maps.
 
 <img src="images/maps2.PNG"/>
