@@ -7,11 +7,14 @@
 ---
 [Web GIS](/projects/webgis)
 Interactive GIS Maps and Applications utilizing different methods and techniques. I have about four years of experiene using different applications and programming languages to creatie interactive web maps.
+
 [<img src="images/Capture.PNG?raw=true"/>](/projects/schoolprojects)
 
 ---
 [Other Data Vizualizations(/projects/dataviz)
 In addition to mapping I will occasionally produce other types of visualizations, mostly using JavaScript and R.
+
+
 [<img src="images/researchproj.PNG"/>](/projects/researchprojects)
 
 
