@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>
+      Data-driven continuous color | Sample | ArcGIS API for JavaScript 4.24
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.24/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.24/"></script>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <script>
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/layers/FeatureLayer",
+        "esri/widgets/Legend"
+      ], (Map, MapView, FeatureLayer, Legend) => {
+        const defaultSym = {
+          type: "simple-fill", // autocasts as new SimpleFillSymbol()
+          outline: {
+            // autocasts as new SimpleLineSymbol()
+            color: [128, 128, 128, 0.2],
+            width: "0.5px"
+          }
+        };
+  
+        const renderer = {
+          type: "simple", // autocasts as new SimpleRenderer()
+          symbol: defaultSym,
+          visualVariables: [
+            {
+              type: "color",
+              field: "black_pop",
+              normalizationField: "pop",
+              legendOptions: {
+                title: "% Percent Black Residents"
+              },
+              stops: [
+                {
+                  value: 0.5,
+                  color: "#c3cad9",
+                  label: "<30%"
+                },
+                {
+                  value: 0.7,
+                  color: "#505e85",
+                  label: ">70%"
+                }
+              ]
+            }
+          ]
+        };
+
+        const povLayer = new FeatureLayer({
+          url: "https://services1.arcgis.com/diQbEFavWah0WAHd/arcgis/rest/services/bmore_2018/FeatureServer/0",
+          renderer: renderer,
+          title: "Percent Black Residents (2018)",
+        });
+        
+        var featureLayer2 = new FeatureLayer({
+          url:
+            "https://services1.arcgis.com/diQbEFavWah0WAHd/arcgis/rest/services/cctv/FeatureServer/0",
+            title: "CCTV Cameras in Baltimore",
+        });
+        
+       
+
+        const map = new Map({
+          basemap: "gray-vector",
+          layers: [povLayer]
+        });
+
+        var view = new MapView({
+          container: "viewDiv",
+          map: map,
+          zoom: 12,
+          center: [-76.6, 39.3]
+  
+        });
+
+        view.ui.add(
+          new Legend({
+            view: view
+          }),
+          "top-right"
+        );
+        
+         map.add(featureLayer2);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
