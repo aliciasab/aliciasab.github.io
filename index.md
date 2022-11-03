@@ -11,7 +11,7 @@ Interactive GIS Maps and Applications utilizing different methods and techniques
 [<img src="images/Capture.PNG?raw=true"/>](/projects/schoolprojects)
 
 ---
-[Other Data Vizualizations(/projects/dataviz)
+[Other Data Vizualizations](/projects/dataviz)
 In addition to mapping I will occasionally produce other types of visualizations, mostly using JavaScript and R.
 
 
