@@ -1,0 +1,426 @@
+<!-- Web App GIS Project; GES 600 UMBC Fall 2020; Alicia Sabatino -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    
+    <!-- PAGE TITLE -->
+    
+    <title>Visualizing Incarceration</title>
+
+    <!-- DARK STYLESHEET -->
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.17/esri/themes/dark/main.css"
+    />
+
+    <!-- CONTAINER PROPERTIES -->
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0 auto;
+        height: 98%;
+        width: 98%;
+      }
+      a:link {
+        color: #00b6f1;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: white;
+        background-color: #e8ca0d;
+        text-decoration: underline;
+      }
+      .topnav {
+        position: relative;
+        overflow: hidden;
+        background-color: black;
+      }
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: ##f23c3f;
+        color: black;
+      }
+      .topnav a.active {
+        background-color: #f23c3f;
+        color: white;
+      }
+      .topnav-centered a {
+       float: none;
+        position: absolute;
+         top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .topnav-right {
+         float: right;
+       }
+
+       #splashscreen {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        background-color:#242424;
+        border: 2px solid #303030;
+        opacity: 0.85
+      }
+
+
+
+    </style>
+
+    <!-- SCRIPT SOURCES -->
+    <script src="https://js.arcgis.com/4.17/"></script>     <!-- ARCGIS API FOR JS -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  <!-- JQUERY FOR SPLASHSCREEN -->
+
+    <script>
+      require([
+        "esri/WebMap",
+        "esri/views/MapView",
+        "esri/layers/FeatureLayer",
+        "esri/renderers/DotDensityRenderer",
+        "esri/widgets/Legend",
+        "esri/widgets/Bookmarks",
+        "esri/widgets/Expand",
+        "esri/widgets/LayerList",
+        "esri/widgets/Search"
+      ], function (
+        WebMap,
+        MapView,
+        FeatureLayer,
+        DotDensityRenderer,
+        Legend,
+        Bookmarks,
+        Expand,
+        LayerList,
+        Search
+      ) {
+
+        // DARK BASEMAP
+        const map = new WebMap({
+          portalItem: {
+            id: "56b5bd522c52409c90d902285732e9f1"
+          }
+        });
+
+        // MAP VIEW
+        const view = new MapView({
+          container: "viewDiv",
+          map: map,
+          zoom: 12,
+          center: [-76.6, 39.3], // CENTER ON BALTIMORE
+          highlightOptions: {
+            fillOpacity: 0,
+            color: [50, 50, 50]
+          },
+          popup: {
+            dockEnabled: true,
+            dockOptions: {
+              position: "top-right",
+              breakpoint: false
+            }
+          },
+          constraints: {
+            maxScale: 35000 // MAX SCALE
+          }
+        });
+
+
+        view.when().then(function () {
+
+          // DOT DENSITY RENDER
+          const dotDensityRenderer = new DotDensityRenderer({
+            dotValue: 100,
+            outline: null,
+            referenceScale: 577790, // VIEW SCALE
+            legendOptions: {
+              unit: "people"
+            },
+
+            // ATTRIBUTES FOR LEGEND
+            attributes: [
+              {
+                field: "WHITE",
+                color: "#f23c3f",
+                label: "White (non-Hispanic)"
+              },
+              {
+                field: "HIS",
+                color: "#e8ca0d",
+                label: "Hispanic"
+              },
+              {
+                field: "BLACK",
+                color: "#00b6f1",
+                label: "Black or African American"
+              },
+              {
+                field: "NATIVE",
+                color: "#32ef94",
+                label: "Native American"
+              },
+              {
+                field: "OTHER",
+                color: "#ff7fe9",
+                label: "Other Race"
+              },
+            ]
+          });
+
+          // PRISONS LAYER
+          var featureLayer2 = new FeatureLayer({
+            url:
+            "https://arces.geog.umbc.edu:6443/arcgis/rest/services/GES400_ASABATINO/final_web_app_draft/MapServer/0",
+            title: "Prisons and Jails",
+            minScale: 5000000,
+           popupTemplate: {
+
+            // CAST POPUP
+            title: "Prisons and Jails",
+            content: [
+              {
+                type: "fields", // FieldsContentElement
+              },
+              {
+                type: "text", // TextContentElement
+                text:
+                  "There are <b>{inmates} incarcerated people </b> at the <b>{NAME} facility.</b>" // DESCRIPTION
+              },
+            ]
+          },
+          outFields: ["*"]
+          });
+
+          // QUALITATIVE STATE LAYER
+          var featureLayer3 = new FeatureLayer({
+            url:
+            "https://arces.geog.umbc.edu:6443/arcgis/rest/services/GES400_ASABATINO/final_web_app_draft/MapServer/1",
+            title: "States",
+            minScale: 20000000,
+            maxScale: 5000000,
+            popupTemplate: {
+
+            // CAST POPUP
+            title: "What word or words come to mind when you think of the visit or visits (to the carceral facility)?",
+            content: [
+              {
+                type: "fields", // FieldsContentElement
+              },
+              {
+                type: "text", // TextContentElement
+                text:
+                  "A respondent with an incarcerated loved one from {NAME} responded: <b>{words}</b>" // DESCRIPTION
+              },
+            ]
+          },
+          outFields: ["*"]
+            });
+
+
+          // SEARCH WIDGET
+          var searchWidget = new Search({
+            view: view
+          });
+
+
+          // ADD RENDERER, POP-UP FOR RENDERER 
+          const url =
+            "https://arces.geog.umbc.edu:6443/arcgis/rest/services/GES400_ASABATINO/final_web_app_draft/MapServer/2";
+
+          const layer = new FeatureLayer({
+            url: url,
+            minScale: 5000000,
+            maxScale: 35000,
+            title: "People with an Immediate Family Member that has been incarcerated (Estimate)",
+            popupTemplate: {
+              title: "Blockgroup in{County}, {State}",
+              content: [
+                {
+                  type: "fields",
+                  fieldInfos: [
+                    {
+                      fieldName: "WHITE",
+                      label: "White (non-Hispanic)",
+                      format: {
+                        digitSeparator: true,
+                        places: 0
+                      }
+                    },
+                    {
+                      fieldName: "HIS",
+                      label: "Hispanic",
+                      format: {
+                        digitSeparator: true,
+                        places: 0
+                      }
+                    },
+                    {
+                      fieldName: "BLACK",
+                      label: "Black or African American",
+                      format: {
+                        digitSeparator: true,
+                        places: 0
+                      }
+                    },
+                    {
+                      fieldName: "NATIVE",
+                      label: "Native American",
+                      format: {
+                        digitSeparator: true,
+                        places: 0
+                      }
+                    },
+                    {
+                      fieldName: "OTHER",
+                      label: "Other",
+                      format: {
+                        digitSeparator: true,
+                        places: 0
+                      }
+                    },
+                    {
+                      fieldName: "Total_P",
+                      label: "Total Population",
+                      format: {
+                        digitSeparator: true,
+                        places: 0
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+            renderer: dotDensityRenderer
+          });
+
+          // ADD LAYERS
+          map.add(layer);
+          map.add(featureLayer2);
+          map.add(featureLayer3);
+
+          // BOOKMARK AND LEGEND
+          view.ui.add(
+            [
+              new Expand({
+                view: view,
+                content: new Legend({ view: view }),
+                group: "top-left",
+                expanded: false
+              }),
+              new Expand({
+                view: view,
+                content: new Bookmarks({ view: view }),
+                group: "top-left"
+              })
+            ],
+            "top-left"
+          );
+
+           // LAYER LIST WIDGET, BOTTOM LEFT
+          view.when(function () {
+            var layerList = new LayerList({
+              view: view
+            });
+
+            view.ui.add(layerList, "bottom-left");
+          });
+
+          // SEARCH WIDGET, BOTTOM RIGHT
+          view.ui.add(searchWidget, {
+          position: "bottom-right"
+        });
+        });
+      });
+    </script>
+ 
+  </head>
+         
+      <!-- ADD A TITLE HTML PAGE --> 
+      <left><p style="color:white;font-size:30px;font-family:helvetica; text-align:center;font-weight: bold;"> <!-- TITLE STYLE --> 
+      Visualizing the Scope of Mass Incarceration in the United States <!-- TITLE --> 
+      
+      <br>
+
+      <!-- DESCRIPTION STYLE --> 
+      <p style="color:white;font-size:15px;font-family:courier;text-align:left;font-weight: bold;">
+        This web app was created using the ArcGIS API for Javascript. The <a href="https://cran.r-project.org/web/packages/totalcensus/index.html">totalcensus</a> and <a href="https://cran.r-project.org/web/packages/tidycensus/index.html">tidycensus</a> R packages helped to create the datasets. The two datasets consist of 1) all prisons or jails in the United States and 2) ACS 2018 five-year population and race data. A <a href="https://journals.sagepub.com/doi/10.1177/2378023119829332#articleCitationDownloadContainer">recent study</a> by Cornell Researchers provided the population weights to determine how many people know an immediate family member that has been incarcerated at a prison or jail. This research was also used to create the third layer, which provides insight into incarcerated people's loved ones experiences visiting the facilities. <br> 
+      </p>
+
+      <!-- WEB MAP --> 
+      <div id="viewDiv"></div>
+
+      <!-- SPLASH SCREEN --> 
+      <div id="splashscreen">
+
+        <!-- SPLASH SCREEN SYLE --> 
+        <p style="color:#C2C2C2;font-size:14px;font-family:helvetica; text-align:left;">
+
+          <!-- SPLASH SCREEN TEXT --> 
+          The true scope of mass incarceration cannot be realized without understanding how this system affects families and communities around the country. Studies show that an estimated <b><u> 1 in 2 people</u></b> in the United States have a parent, partner or sibling that has been incarcerated. <br><br>
+          This map uses population frequencies by <b><u>race</u></b>. Overall, 42% of white people, 48% of hispanic people, 63% of Black people, and 63% of Native people have a parent, partner or sibling that has been incarcerated at a prison or jail. When you look at both gender and race, <b><u>Black women</u> are most likely to know an immediate family member or partner that has been incarcerated</b>. Future visualizations will account for income, education level, and region. <br><br>
+          If you click a facility, you can see the name, number of inmates, and facility type. If you click on one of the rendered density dots, you can see the population and race breakdown for the block group. Resources to learn more are below the map. To zoom in and out, view the legend, and to view bookmarked locations use the buttons on the top left corner. There is a search bar on the bottom right. <br><br>If you zoom out until you see the outlines of the states, you can click a state and read how people described their experience visiting their incarcerated family member or partner.
+        </p>
+        <br>
+        <br>
+
+    <!-- CONTINUE BUTTON -->
+    <a href="#" class="enter_link">
+
+    <!-- CONTINUE BUTTON I MADE IN ILLUSTRATOR TO MATCH THEME-->
+    <center><img src=" https://64.media.tumblr.com/47a0473f42133495607ed5d7ef7ceac0/tumblr_inline_ql8stgSLkj1to5cop_500.png" alt="continue" width="205px"></center>
+    </a>
+  </div>
+
+<!-- BOTTOM NAVIGATION STYLE AND LINKS--> 
+  <body style="background-color:black;">
+
+    <!-- NAVIGATION -->
+    <div class="topnav">
+
+    <!-- LINKS -->
+    <div class="topnav-right">
+    <p style="color:white;font-size:10px;font-family:helvetica;font-weight: bold;">
+      <a href="https://twitter.com/aliciacsabatino">my twitter</a>
+      <a href="https://bailfunds.github.io/">bail funds by state</a>
+      <a href="https://abolitionistfutures.com/full-reading-list">abolition reading list</a>
+    </div>
+  </div>
+
+      <!-- SOURCES  --> 
+      <p style="color:white;font-size:15px;font-family:courier; text-align:left;font-weight: bold;">
+        <br><br><u> sources </u><br><br>
+        Enns, P. K., Yi, Y., Comfort, M., Goldman, A. W., Lee, H., Muller, C., Wakefield, S., Wang, E. A., & Wildeman, C. (2019). What Percentage of Americans Have Ever Had a Family Member Incarcerated?: Evidence from the Family History of Incarceration Survey (FamHIS). Socius. https://doi.org/10.1177/2378023119829332
+        <br><br>
+        U.S. Census Bureau (2010). Prisons and jails by city, 2010 decennial. Retrieved using totalcensus R package.
+        <br><br>
+        U.S. Census Bureau (2018). Population and Race statistics, 2014-2018 American Community Survey 5-year estimates. Retrieved using tidycensus R package.
+      </p>      
+  </body>
+  
+  <!-- JQUEREY SCRIPT -->
+  <script>
+    $('.enter_link').click( function() {
+      $(this).parent().fadeOut(500);
+    });
+  </script>
+</html>
